@@ -1,11 +1,11 @@
-import express from 'express';
-import type User from '@shared/types/user'
+import express from 'express'
+import type User from '@shared/user'
 
-const router = express.Router();
+const router = express.Router()
 
 router.get('/users', (req, res) => {
-    let user:User = {id: 2, name: 'test2'}
-    res.send([user]);
-});
+  const user: User = { id: 2, name: 'test2' }
+  res.send([user])
+})
 
-export default router;
+export default router

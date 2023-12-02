@@ -15,9 +15,19 @@
     "checkJs": true,
     "isolatedModules": true,
     "paths": {
-      "@shared/*": ["./../shared/*"]
+      "@shared/*": [
+        "./../shared/src/*"
+      ]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.js", "src/**/*.svelte"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.js",
+    "src/**/*.svelte"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
 }
